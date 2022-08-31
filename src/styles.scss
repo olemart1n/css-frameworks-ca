@@ -1,0 +1,39 @@
+@import 'variables.scss';
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+
+
+// Adding a color to theme-colors. Dont know why this function has to stay here. But it works 
+$custom-theme-colors: (
+    "grey-ish": #A6BAB9
+);
+
+$theme-colors: map-merge($custom-theme-colors, $theme-colors);
+
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+
+
+.fa-circle {
+    color: $primary;
+}
+
+
+.profile-card {
+    min-height: 150px;
+}
+
+.profile-sircle {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 2px solid $light;
+    content: "";
+    margin: auto;
+    background-image: url('../img/61205.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
